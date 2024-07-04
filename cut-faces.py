@@ -25,7 +25,7 @@ for folder in folders:
 
 print("\nCat images found: " + np.str(i))
 
-detector = cv2.CascadeClassifier("/home/federico/Desktop/Deep learning/cat-generator/haarcascade_frontalcatface.xml")
+detector = cv2.CascadeClassifier(f"{HOME_DIR}/Desktop/Deep learning/cat-generator/haarcascade_frontalcatface.xml")
 j = 1
 
 print("\nSaving cat faces in:")
