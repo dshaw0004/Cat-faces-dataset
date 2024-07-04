@@ -25,5 +25,5 @@ print("\nimages: ", images)
 for im in images:
     print("\nim: ", im)
     img_data = requests.get(im['coco_url']).content
-    with open('/home/federico/Desktop/Deep learning/cat-generator/cocoapi-master/downloaded_images2/' + im['file_name'], 'wb') as handler:
+    with open(f'{HOME_DIR}/Desktop/Deep learning/cat-generator/cocoapi-master/downloaded_images2/' + im['file_name'], 'wb') as handler:
         handler.write(img_data)
