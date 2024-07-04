@@ -1,11 +1,14 @@
 # import the necessary packages
+import os
 import cv2
 import glob
 import numpy as np
 import imutils
 
-path = "/home/federico/Desktop/Deep learning/cat-generator/cat face detector/coco-dataset"
-path_aug = "/home/federico/Desktop/Deep learning/cat-generator/cat face detector/coco-modified-dataset"
+HOME_DIR = os.environ['HOME']
+
+path = f"{HOME_DIR}/Desktop/Deep learning/cat-generator/cat face detector/coco-dataset"
+path_aug = f"{HOME_DIR}/Desktop/Deep learning/cat-generator/cat face detector/coco-modified-dataset"
 
 
 # save all of the file names to a list and
